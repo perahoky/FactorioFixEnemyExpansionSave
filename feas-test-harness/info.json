@@ -1,0 +1,9 @@
+{
+  "name": "feas-test-harness",
+  "version": "1.0.0",
+  "title": "FEAS test harness",
+  "author": "Pera",
+  "factorio_version": "2.1",
+  "description": "Test-only mod. Reports map_settings.enemy_expansion and triggers one autosave, so test-persistence.ps1 can prove that the repair survives saving and removing fix-enemy-expansion-save. Never published, never installed into a real game.",
+  "dependencies": ["base >= 2.1"]
+}

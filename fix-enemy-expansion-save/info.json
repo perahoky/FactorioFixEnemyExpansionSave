@@ -1,0 +1,12 @@
+{
+  "name": "fix-enemy-expansion-save",
+  "version": "1.0.0",
+  "title": "Fix Enemy Expansion Save",
+  "author": "Pera",
+  "factorio_version": "2.1",
+  "description": "Repairs the enemy expansion map settings that a removed mod left behind in a save. game.map_settings is engine state stored inside the save, so values a mod wrote there survive its uninstall - and so does this repair. Everything is done through the normal runtime API, so unlike a /c console command it never sets the permanent flag that disables achievements for the save. Install it, load the save, check the reported values, save, then remove the mod again.",
+  "dependencies": [
+    "base >= 2.1",
+    "? smart-enemy-ai"
+  ]
+}

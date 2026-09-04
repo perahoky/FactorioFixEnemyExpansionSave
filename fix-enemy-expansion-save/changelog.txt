@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-09-04
+  Features:
+    - Restores enemy expansion map settings that a removed mod left behind in a save, without console commands.
+    - All values are runtime-global mod settings and can be changed in-game; changes apply immediately.
+    - Reports every change as "field: old -> new" in chat and in the log, and verifies the values the engine actually kept.
+    - Adds /expansion-status (read-only) and /expansion-fix (admin) console commands.
+    - Optional one-shot cleanup of leftover enemy units, scoped to Nauvis or all surfaces. Nests and worms are never touched.
