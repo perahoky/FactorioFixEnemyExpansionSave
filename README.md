@@ -3,7 +3,10 @@
 > my knowledge and belief, but provided **as is, without warranty**. It permanently changes
 > map settings inside your save — back it up first. Use at your own risk; I accept no
 > liability for damaged saves or lost progress.
+
 # fix-enemy-expansion-save
+
+mod portal: https://mods.factorio.com/mod/fix-enemy-expansion-save
 
 A small Factorio **2.1** mod that repairs `map_settings.enemy_expansion` in a save that was
 permanently boosted by the retired *Dynamic Biter Expansion* feature of
