@@ -35,12 +35,13 @@ Note that `smart-enemy-ai` gained its own restore path in 10.9.4 (`MIGRATIONS[19
 only works while the mod is still enabled, and it deletes its snapshot after running once.
 If the mod is already disabled or removed, that route is gone.
 
-## The forum command is wrong for 2.1
+## Which values this mod writes
 
-The numbers quoted in the discussion are Factorio **1.1** values. Checked against
-`data\base\prototypes\map-settings.lua` of the installed 2.1.17:
+The numbers in the mod-portal discussion date from Factorio **1.1**; a few base values have
+changed since. Checked against `data\base\prototypes\map-settings.lua` of the installed
+2.1.17:
 
-| Field | Forum command | **Real 2.1 base** | This mod's default |
+| Field | Portal discussion | **2.1 base** | This mod's default |
 | --- | --- | --- | --- |
 | `min_expansion_cooldown` | 14400 | **36000** | **14400** |
 | `max_expansion_cooldown` | 216000 | 216000 | 216000 |
@@ -134,8 +135,9 @@ apply with an explanation instead of silently clamping.
 
 ### Unit cleanup
 
-The forum command also runs `kill_all_units()`, to clear settler groups that are already
-en route with the old parameters. That is destructive, so it is **off by default**:
+The command from the discussion also runs `kill_all_units()`, to clear settler groups that
+are already en route with the old parameters. That is destructive, so it is **off by
+default**:
 
 - `none` — nothing is killed (default).
 - `nauvis` — destroys enemy entities of type `unit` on Nauvis only. Nests and worms are
